@@ -17,7 +17,7 @@ settings.configure(
     MIDDLEWARE_CLASSES=(
         'django.middleware.common.CommonMiddleware',
         'django.middleware.csrf.CsrfViewMiddleware',
-        'django.middleware.clickjacking.XFrameoptionsMiddleware',
+        'django.middleware.clickjacking.XFrameOptionsMiddleware',
     ),
 )
 
@@ -35,5 +35,5 @@ urlpatterns = (
 application = get_wsgi_application()
 
 if __name__ == '__main__':
-    from django.core.management import excute_from_command_line
-    excute_from_command_line(sys.argv)
+    from django.core.management import execute_from_command_line
+    execute_from_command_line(sys.argv)
